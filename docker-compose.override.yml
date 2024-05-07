@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  shopping.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8002
+    ports:
+      - "8007:8002" #direct 8001(port host): to 8000(port container)
+
+  shopping.client:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8006
+    ports:
+      - "8005:8006" #direct 8001(local port in host machine): to 80(port inside container)
+
+  shopping.db:
+    container_name: shoppingdb
+    restart: always
+    ports:
+      - "27017:27017" #direct 27017(local port in host machine): to 27017(port inside container)
+    volumes:
+      - ${WEBAPP_STORAGE_HOME}/site:/data/db

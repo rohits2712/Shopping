@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2bwwbLGRb/AgmFCa5HBZ3MEQXwrnXPhlD9gYSEPimRsT4UPp3TZFm45B9Jb10J0R2WUto/wlzuSVG5G8X4V5/g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sharoroh\\source\\repos\\Shopping\\Shopping.Client\\Shopping.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sharoroh\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\microsoft.visualstudio.azure.containers.tools.targets.1.19.6.nupkg.sha512",
+    "C:\\Users\\sharoroh\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
