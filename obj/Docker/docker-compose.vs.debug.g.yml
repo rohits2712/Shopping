@@ -3,7 +3,6 @@ version: '3.4'
 services:
   shopping.api:
     image: shoppingapi:dev
-    container_name: "Shopping.API"
     build:
       args:
         BUILD_CONFIGURATION: Debug
@@ -38,7 +37,6 @@ services:
     tty: true
   shopping.client:
     image: shoppingclient:dev
-    container_name: "Shopping.Client_1"
     build:
       args:
         BUILD_CONFIGURATION: Debug

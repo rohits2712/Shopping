@@ -2,6 +2,7 @@ version: '3.4'
 
 services:
   shopping.api:
+    container_name: shoppingapi
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8002
@@ -12,9 +13,11 @@ services:
       - "8007:8002" #direct 8007(port host): to 8002(port container)
 
   shopping.client:
+    container_name: shoppingclient
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8006
+      - "ShoppingAPIUrl=http://shoppingapi"
     depends_on:
       - shopping.db
       - shopping.api
