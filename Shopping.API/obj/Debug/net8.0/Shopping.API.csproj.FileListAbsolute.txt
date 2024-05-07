@@ -43,3 +43,4 @@ C:\Users\sharoroh\source\repos\Shopping\Shopping.API\obj\Debug\net8.0\refint\Sho
 C:\Users\sharoroh\source\repos\Shopping\Shopping.API\obj\Debug\net8.0\Shopping.API.pdb
 C:\Users\sharoroh\source\repos\Shopping\Shopping.API\obj\Debug\net8.0\Shopping.API.genruntimeconfig.cache
 C:\Users\sharoroh\source\repos\Shopping\Shopping.API\obj\Debug\net8.0\ref\Shopping.API.dll
+C:\Users\sharoroh\source\repos\Shopping\Shopping.API\obj\Debug\net8.0\Shopping.API.sourcelink.json

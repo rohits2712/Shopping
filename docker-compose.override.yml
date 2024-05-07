@@ -5,15 +5,21 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8002
+      - "DatabaseSettings:ConnectionString=mongodb://shoppingdb:27017" #overriding appsettings conn string
+    depends_on:
+      - shopping.db
     ports:
-      - "8007:8002" #direct 8001(port host): to 8000(port container)
+      - "8007:8002" #direct 8007(port host): to 8002(port container)
 
   shopping.client:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8006
+    depends_on:
+      - shopping.db
+      - shopping.api
     ports:
-      - "8005:8006" #direct 8001(local port in host machine): to 80(port inside container)
+      - "8005:8006" #direct 8005(local port in host machine): to 8006(port inside container)
 
   shopping.db:
     container_name: shoppingdb
