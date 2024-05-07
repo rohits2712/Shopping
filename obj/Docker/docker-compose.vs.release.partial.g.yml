@@ -2,7 +2,6 @@ version: '3.4'
 
 services:
   shopping.api:
-    container_name: "Shopping.API"
     build:
       args:
         BUILD_CONFIGURATION: Release
@@ -28,7 +27,6 @@ services:
       com.microsoft.visual-studio.project-name: "Shopping.API"
     tty: true
   shopping.client:
-    container_name: "Shopping.Client_1"
     build:
       args:
         BUILD_CONFIGURATION: Release

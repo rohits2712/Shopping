@@ -17,7 +17,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8006
-      - "ShoppingAPIUrl=http://shoppingapi"
+      - "ShoppingAPIUrl=http://shoppingapi:8002"
     depends_on:
       - shopping.db
       - shopping.api
